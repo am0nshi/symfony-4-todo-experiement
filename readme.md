@@ -19,8 +19,8 @@ POST http://localhost:8000/api/login_check {_username: johndoe, _password: test}
 
 # Run tests
 * cp phpunit.xml.dist phpunit.xml
-* add `<env name="DATABASE_URL" value="mysql://root:@127.0.0.1:3306/todo" />` database setup for test
-* docker-compose run php-fpm bin/phpunit
+* setup `DATABASE_URL` in phpunit.xml
+* ./bin/phpunit
 
 # FYI
 .env and ./config/jwt/*.pem are added into repo to avoid it's personal generation. Its a security issue, but it's not a real project :)
