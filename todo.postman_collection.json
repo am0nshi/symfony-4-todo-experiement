@@ -1,0 +1,227 @@
+{
+	"info": {
+		"name": "_todo",
+		"_postman_id": "324346a1-8e5e-f07f-a23a-984e77977db7",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get todo list",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJyb2xlcyI6WyJST0xFX1VTRVIiXSwidXNlcm5hbWUiOiJqb2huZG9lIiwiaWQiOjEsImlhdCI6MTUyODkxNzE2NCwiZXhwIjoxNTI5Mjc3MTY0fQ.yQ8yqF_ix8QDBv21Q4x5qBiJvUvKPZRU1akavx7L6bUo7sWDZap9OUZEivuZnpXLVp_p8oMq_Gfi38wx4aRWJA2JI90GIc3iDd2hcaheby4tx-p11k_YNgt0Xr5r-b1AACTZltU9aQ0uRT2SSB1JneL15Y5yMOc5HtaGr3amx7rWM-uDmZHvgveWuEt_T2NUm63bxiwi5YbmR8k2dsgaQ_Q0XqAm4ssKU_57-CPLVzAdAv5ZHAG2Xfs1bH_FoRo41MTZY7HSp7djc2muitd91OwSi95XDKDL40NnEiMKUiT3Hcfh2ZitLXnNQEYKKzX6vWjfwtmPzvv4YG5ruJhQE_RcmHV61AUkRUaM6yvelccNj1Eod-RBg395BT8OFTs7dYUC_RrT5d_WDXcHD4XmjJLIvJAMMN5331xiO_Jrvjmyml65bV2hgq_hu1wMpG3Crfce_8JAIHgSKQP9Tb_0fdsAVD2FCvt1l4TmptJUwo8kNMjZw-9EnOZkVQWUp-JKBZXEJbRnhztV0xEBzaezuranKLZiG07IBLNlyjbHT7ZO-exJim2MxEFzD5gS0-g34g2AC5PNt4UMoCl1oxbs3o0juZg7biTC6cTv19c5lZmhLqppZEOxp2j1BoZeAsIKmkU1VIN-i6820c49bLxp_tKZ4SjVGL4FLtqnhDn9lVk"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8000/api/todo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"todo"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "create todo",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJyb2xlcyI6WyJST0xFX1VTRVIiXSwidXNlcm5hbWUiOiJqb2huZG9lIiwiaWQiOjEsImlhdCI6MTUyODc0Njg0OCwiZXhwIjoxNTI5MTA2ODQ4fQ.BXCp6g6EM3g8V0tTD4F3eMMnEglwF74FOkFrb6DXzTofO_dcIzl1hLAH6AxiI2lliBQsipCNkd927IxmuRPVfJuosJgVjskSWRwqGY-UiEt5O1D9ELhm17eR9O4e_5WrUQ5xDTJ3oRmqwv41GdAq4U9mi97Xh1SEgbIIbzbPd6C7lDVGVF0OgK7Boq2-yC3Skx4P4dDIYPfQ0xc4TeKt5HJnx-8_aFrWXRPNhyrv39osWstrJe0ud8gq6NHvixS16VGg4KddcJwPRPY8uOn6ijqsZpqhikPk6xoPS8RoDI_gmiuaWyER0DUB6y90g-vx7VYl6hXxya2tyay_x_IwRDLrYje3KJWciskZJCDNVGFr6M-Wjiv4W0U5fGfUb19Jj2H4-01r6z5Hthw0W6oLxY5LBPVpjva108Suy0Rc_W2QWr3scvIa3br-I6Kao6a2z7z0Lx1FoO79xHUDYYPSQ_iNl83IxgSlsxZXROP5j0c1vebovzhDChXcMumdMs_6Z7PQtwgLF75UNCw6nBUnfngIlNIyNvkw51rkqgIjKq9f6PPL4_y07Hw0W91A1ztkDKrOvuDT89n-7llBfRzVCwzmkc6fHZ3gvvXapE3Po-o7zugYi5lyf4oiAhMfxM-8YwqCT8jeQqVhfHPPD9DwAo9v-jn2GFV7gX67udvBFt8"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "content",
+							"value": "some test content",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/todo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"todo"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "update todo",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJyb2xlcyI6WyJST0xFX1VTRVIiXSwidXNlcm5hbWUiOiJqb2huZG9lIiwiaWQiOjEsImlhdCI6MTUyODcwNjcwMywiZXhwIjoxNTI5MDY2NzAzfQ.FwDS_G_NY_ugUFK3xO3FitZmnJ4Zv-LOAACB_KyvCC9V89KCma21Vepqh9Y3V0YR2DBcFUemhuOR29hjGU66knZg1i1NV8hsgWkqgMk76Eng0RJ2LY5O4aeRcTtNNCV73KhIvzGDnHEVefB10IWnwGHmBjSXMzF_m-FDXQQCWzTPuO3jkj3dPXHumcn_d6iRlwionSwIE0h6T8QeV6OvpX9MfYMY9QfOiu0dyuErL7yqRBPA99pLx8t4PLK7EDRMsAax7ggJQ4F8L_mmvuWRrtwZCRaP5bvBMr_uXS7DYZTgZh5glm6sno5O49_J7WXzXSTubtHfh5MGI7b5kMb7T2G5Hzu7NpVyvDXhlUny2azgaeDyJqTtwROnaDBX8hRImr3PyxygcnV5pRGodhbbCcCmDIYp2pZVyDrNvPzSvA39coJJDs1Y88oAnRa3da9bUMc-hq6LvemZMY8JId2sS0jLAuOVRJEG0zMPyrlL7gkZd7NTyUGD_zp6WjJaitVWdUU2kcGzzHrWGMDOguJ0snC1xHFlMzywSJ2mNP_iS9gLSHfeC6OpNxY78op7TpGbqq4ufZ6CjnFpxeDGGj5ySHc7UfPgEc2pY0zCoAch78FdzBeSM5TrJxDWsFeefeVLmoCmiplogk521PlTNnXOQVFcWZ6naJ-jOBtdpDrVUxw"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "content",
+							"value": "some 2 content",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "completed",
+							"value": "true",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/todo/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"todo",
+						"3"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "remove todo",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJyb2xlcyI6WyJST0xFX1VTRVIiXSwidXNlcm5hbWUiOiJqb2huZG9lIiwiaWQiOjEsImlhdCI6MTUyODcwNjcwMywiZXhwIjoxNTI5MDY2NzAzfQ.FwDS_G_NY_ugUFK3xO3FitZmnJ4Zv-LOAACB_KyvCC9V89KCma21Vepqh9Y3V0YR2DBcFUemhuOR29hjGU66knZg1i1NV8hsgWkqgMk76Eng0RJ2LY5O4aeRcTtNNCV73KhIvzGDnHEVefB10IWnwGHmBjSXMzF_m-FDXQQCWzTPuO3jkj3dPXHumcn_d6iRlwionSwIE0h6T8QeV6OvpX9MfYMY9QfOiu0dyuErL7yqRBPA99pLx8t4PLK7EDRMsAax7ggJQ4F8L_mmvuWRrtwZCRaP5bvBMr_uXS7DYZTgZh5glm6sno5O49_J7WXzXSTubtHfh5MGI7b5kMb7T2G5Hzu7NpVyvDXhlUny2azgaeDyJqTtwROnaDBX8hRImr3PyxygcnV5pRGodhbbCcCmDIYp2pZVyDrNvPzSvA39coJJDs1Y88oAnRa3da9bUMc-hq6LvemZMY8JId2sS0jLAuOVRJEG0zMPyrlL7gkZd7NTyUGD_zp6WjJaitVWdUU2kcGzzHrWGMDOguJ0snC1xHFlMzywSJ2mNP_iS9gLSHfeC6OpNxY78op7TpGbqq4ufZ6CjnFpxeDGGj5ySHc7UfPgEc2pY0zCoAch78FdzBeSM5TrJxDWsFeefeVLmoCmiplogk521PlTNnXOQVFcWZ6naJ-jOBtdpDrVUxw"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "content",
+							"value": "some 2 content",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "completed",
+							"value": "true",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/todo/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"todo",
+						"3"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get bearer token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": "force to response with json"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"description": "->isAjax()"
+					},
+					{
+						"key": "Authorization",
+						"value": "{{bearer}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "_username",
+							"value": "johndoe",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "_password",
+							"value": "test",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/login_check",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login_check"
+					]
+				},
+				"description": "Get materials list"
+			},
+			"response": []
+		}
+	]
+}
